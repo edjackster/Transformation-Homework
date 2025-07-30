@@ -6,8 +6,7 @@ public class SizeUpper : MonoBehaviour
 {
     [SerializeField] private float _resizeSpeed;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.localScale += transform.localScale * _resizeSpeed * Time.deltaTime;
     }
